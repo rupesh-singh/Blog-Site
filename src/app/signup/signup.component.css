@@ -1,0 +1,26 @@
+.inputfield {
+    padding: 10px;
+  }
+.form-control{
+
+    font-size:20px;
+    height: 50px;
+
+}
+
+.but{
+margin-left: 550px;
+}
+
+.btn-lg{
+
+width:120px;
+font-size: 20px;
+font-style: inherit;
+}
+  .center {
+    margin: auto;
+    width: 60%;
+    border: 0px solid #73AD21;
+    padding: 10px;
+}

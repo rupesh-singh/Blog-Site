@@ -1,0 +1,33 @@
+<br><br>
+
+<button class="btn btn-lg" (click)="searchTest()" style="float: right" type="submit">search</button>
+    
+    <div style="overflow: hidden; padding-right: .5em;">
+       <input type="text"  placeholder="Search Blogs by Author Name" [(ngModel)]="name" class="form-control" style="width: 100%;" />
+    </div>
+<br>
+    <hr>
+    <div *ngIf="flag==1">
+    
+        <div *ngIf="blog[0];else other">
+        <div *ngFor="let x of blog;let i=index">  
+            <div class="panel panel-success">
+                <div class="panel-body">
+                <article>
+                    <h2><b>{{x.title}}</b></h2>
+                    <p class="article-meta"><strong>Author:</strong>{{x.name}}, <strong>Published:</strong>{{x.date}}</p>
+                      <p><font face="Times New Roman" size="5"> {{x.content}}</font> </p>
+                    </article>
+        </div>
+        </div>
+        </div>
+         
+        </div>
+        <ng-template #other>
+            <h1 style="color:white;font-size:50px">
+                not found 
+            </h1>
+        </ng-template>
+         
+        </div>
+        

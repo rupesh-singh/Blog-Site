@@ -2,26 +2,26 @@
 
     <div class="center">
       <div style="text-align:center;">
-      <h1>Sign up</h1>
+      <h1 class="k">Sign up</h1>
       <p>
-        <a href="#">Have an account?</a>
+        <a href="#" class="k">Have an account?</a>
       </p>
       </div>
       
-      <form class="form-group">
+      <form class="form-group" (ngSubmit)="onSignupSubmit()">
          <div class="inputfield">
-          <input class="form-control" name="username" placeholder="Username" type="text">
+          <input class="form-control" [(ngModel)]="name" name="name" placeholder="Username" type="text">
           </div>
 
            <div class="inputfield">
-            <input class="form-control" name="email" placeholder="Email" type="text">
+            <input class="form-control" [(ngModel)]="email" name="email" placeholder="Email" type="text">
             </div>
            
             <div class="inputfield">
-           <input class="form-control" name="password" placeholder="Password" type="password">
+           <input class="form-control" [(ngModel)]="password" name="password" placeholder="Password" type="password">
            </div> 
            <div class="but">
-           <button class="btn btn-lg" style="background-color: #4CAF50;" type="submit">Sign up</button>
+           <button class="btn btn-lg" style="background-color: #4CAF50;" type="submit" value="SignUp">Sign up</button>
            </div>
         </form>
     </div>

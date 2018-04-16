@@ -1,7 +1,7 @@
 
 <fieldset>
-    <legend><h2 bgcolor="lightred"><b>Write an article</b></h2></legend>
-    <p style="font-size:15px">Here you can write your experience with angular 2. We know its not easy to learn angular within a week
+    <legend><h2 class="k" bgcolor="lightred"><b>Write an article</b></h2></legend>
+    <p style="font-size:15px" class="k">Here you can write your experience with angular 2. We know its not easy to learn angular within a week
       and without any help. Your article will be seen by our registered users. If possible write a very catchy title so that more people read it.
       We feel you <3.
     </p>
@@ -9,27 +9,27 @@
     <br><br>
 
     <div class="center">
-<form class="form-horizontal">
+<form class="form-horizontal" (submit)="addblognow()">
     <div class="form-group">
-    <input type="text" class="form-control form1" id="Name" placeholder="Name">
+    <input type="text" class="form-control form1" [(ngModel)]="name" name="name" id="Name" placeholder="Name">
     </div>
 
     <div class="form-group">
-    <input type="date" class="form-control form1" id="Date" placeholder="Date">
+    <input type="date" class="form-control form1" [(ngModel)]="date" name="date" id="Date" placeholder="Date">
     </div>
     
 
     <div class="form-group">
-    <input type="text" class="form-control form1" id="title" placeholder="Title">
+    <input type="text" class="form-control form1" [(ngModel)]="title" name="title" id="title" placeholder="Title">
     </div>
 
 
     <div class="form-group">
-    <textarea rows="10" cols="75" class="form-control" id="Content" placeholder="Content"></textarea>
+    <textarea rows="10" cols="75" class="form-control" [(ngModel)]="content" name="content" id="Content" placeholder="Content"></textarea>
     </div>
         
     <div class="form-group">
-    <button type="submit" class="btn btn-lg">Submit</button>
+    <button type="submit" class="btn btn-lg" >Submit</button>
     </div>
     
       

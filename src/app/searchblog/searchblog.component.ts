@@ -3,27 +3,24 @@ import {AuthService} from '../services/auth.service';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-searchblog',
+  templateUrl: './searchblog.component.html',
+  styleUrls: ['./searchblog.component.css']
 })
-export class HomeComponent implements OnInit {
-  title = 'BlogSite';
-  blog: any[];
-  flag: any;
-  name: any;
-  constructor( private TS: AuthService, private router: Router ) { }
+export class SearchblogComponent implements OnInit {
+name: any;
+blog: any[];
+flag: any;
+  constructor(
+    private TS: AuthService, private router: Router
+  ) { }
 
   ngOnInit() {
     this.flag=0;
-    this.TS.Load().subscribe(data=>{
-      console.log(data);
-      if(data['success']==true)
-      {
-        this.blog=data['blog'];
-      }
-    });
+    
   }
+
+
 
   searchTest()
   {
@@ -40,6 +37,4 @@ export class HomeComponent implements OnInit {
       }
     })
   }
-  
-
 }

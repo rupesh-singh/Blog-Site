@@ -2,22 +2,22 @@
 
     <div class="center">
       <div style="text-align:center;">
-      <h1>Login</h1>
+      <h1 class="k">Login</h1>
       <p>
-        <a href="#">Need an account?</a>
+        <a class="k" href="#">Need an account?</a>
       </p>
       </div>
       
-      <form class="form-group">
+      <form class="form-group" (submit)="onLoginSubmit()">
          <div class="inputfield">
-          <input class="form-control" name="username" placeholder="Username" type="text">
+          <input class="form-control" [(ngModel)]="username" name="username" placeholder="Username" type="text">
           </div>
         
            <div class="inputfield">
-           <input class="form-control" name="password" placeholder="Password" type="password">
+           <input class="form-control" [(ngModel)]="password" name="password" placeholder="Password" type="password">
            </div> 
            <div class="but">
-           <button class="btn btn-lg" style="background-color: #4CAF50;" type="submit">Login</button>
+           <button class="btn btn-lg" style="background-color: #4CAF50;" type="submit" value="Login">Login</button>
            </div>
         </form>
     </div>

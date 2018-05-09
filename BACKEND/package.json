@@ -1,0 +1,21 @@
+{
+  "name": "aitproject",
+  "version": "1.0.0",
+  "description": "tp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rupesh Singh",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "mongojs": "^2.5.0",
+    "mongoose": "^5.0.14"
+  }
+}
